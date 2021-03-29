@@ -1,0 +1,2 @@
+com/uzabase/rssreader/Application.java
+ com.uzabase.rssreader.Application
