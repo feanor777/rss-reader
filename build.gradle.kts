@@ -25,7 +25,8 @@ repositories {
 
 dependencies {
     implementation("org.codehaus.groovy:groovy:3.0.7")
-    implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.boot:spring-boot-starter")
+    implementation("com.rometools:rome:1.15.0")
 
     compileOnly("org.projectlombok:lombok")
     annotationProcessor("org.projectlombok:lombok")
