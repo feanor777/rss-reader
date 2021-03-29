@@ -1,53 +1,46 @@
- Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
-# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+.gradle
+build/
 
-# User-specific stuff
-.idea/**/workspace.xml
-.idea/**/tasks.xml
-.idea/**/usage.statistics.xml
-.idea/**/dictionaries
-.idea/**/shelf
+#Avoid ignoring Gradle wrapper jar file
+!gradle/wrapper/gradle-wrapper.jar
 
-# Generated files
-.idea/**/contentModel.xml
+# Ignore Gradle GUI config
+gradle-app.setting
 
-# Sensitive or high-churn files
-.idea/**/dataSources/
-.idea/**/dataSources.ids
-.idea/**/dataSources.local.xml
-.idea/**/sqlDataSources.xml
-.idea/**/dynamic.xml
-.idea/**/uiDesigner.xml
-.idea/**/dbnavigator.xml
+#Cache of project
+.gradletasknamecache
 
-# Gradle
-.idea/**/gradle.xml
-.idea/**/libraries
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
 
-# Gradle and Maven with auto-import
-# When using Gradle or Maven with auto-import, you should exclude module files,
-# since they will be recreated, and may cause churn.  Uncomment if using
-# auto-import.
- .idea/artifacts
- .idea/compiler.xml
- .idea/jarRepositories.xml
- .idea/modules.xml
- .idea/*.iml
- .idea/modules
- *.iml
- *.ipr
-
-# CMake
-cmake-build-*/
-
-# Mongo Explorer plugin
-.idea/**/mongoSettings.xml
+### IntelliJ IDEA ###
+.idea
 
 # File-based project format
 *.iws
 
-# IntelliJ
+# User-specific stuff
+.idea/tasks.xml
+
+# Sensitive or high-churn files
+.idea/dataSources/
+.idea/dataSources.ids
+.idea/dataSources.xml
+.idea/dataSources.local.xml
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
+.idea/uiDesigner.xml
+
+*.iml
+*.ipr
 out/
+logs/
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
@@ -55,14 +48,14 @@ out/
 # JIRA plugin
 atlassian-ide-plugin.xml
 
-# Cursive Clojure plugin
-.idea/replstate.xml
+target/
+lib_managed/
+src_managed/
+project/boot/
+.cache
 
-# Crashlytics plugin (for Android Studio and IntelliJ)
-com_crashlytics_export_strings.xml
-crashlytics.properties
-crashlytics-build.properties
-fabric.properties
+# Java annotation processor (APT)
+.factorypath
 
-# Editor-based Rest Client
-.idea/httpRequests
+# Code Recommenders
+.recommenders/

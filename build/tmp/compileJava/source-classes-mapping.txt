@@ -1,2 +1,14 @@
 com/uzabase/rssreader/Application.java
  com.uzabase.rssreader.Application
+com/uzabase/rssreader/model/InputType.java
+ com.uzabase.rssreader.model.InputType
+com/uzabase/rssreader/input/impl/UrlInputReader.java
+ com.uzabase.rssreader.input.impl.UrlInputReader
+com/uzabase/rssreader/input/impl/FileInputReader.java
+ com.uzabase.rssreader.input.impl.FileInputReader
+com/uzabase/rssreader/input/InputReaderFactory.java
+ com.uzabase.rssreader.input.InputReaderFactory
+com/uzabase/rssreader/exception/InputReaderNotFoundException.java
+ com.uzabase.rssreader.exception.InputReaderNotFoundException
+com/uzabase/rssreader/input/InputReader.java
+ com.uzabase.rssreader.input.InputReader
