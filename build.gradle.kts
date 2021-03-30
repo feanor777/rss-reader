@@ -27,6 +27,9 @@ dependencies {
     implementation("org.codehaus.groovy:groovy:3.0.7")
     implementation("org.springframework.boot:spring-boot-starter")
     implementation("com.rometools:rome:1.15.0")
+    implementation("commons-validator:commons-validator:1.7")
+    implementation("org.apache.commons:commons-collections4:4.0")
+    implementation("org.apache.commons:commons-lang3:3.0")
 
     compileOnly("org.projectlombok:lombok")
     annotationProcessor("org.projectlombok:lombok")

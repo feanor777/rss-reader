@@ -23,7 +23,7 @@ public class UrlInputReader implements InputReader {
             return new URL(url).openStream();
         } catch (IOException e) {
             log.warn("Not able to find the rss feed by current url {}", url);
-            throw new RuntimeException("asdf");
+            throw new RuntimeException(e);
         }
     }
 }
