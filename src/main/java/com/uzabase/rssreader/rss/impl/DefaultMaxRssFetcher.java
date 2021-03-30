@@ -14,7 +14,7 @@ import java.io.InputStream;
 
 @Slf4j
 @Service
-public class DefaultRssFetcher implements RssFetcher {
+public class DefaultMaxRssFetcher implements RssFetcher {
 
     @Override
     public SyndFeed fetch(String rssInput) {
@@ -26,7 +26,7 @@ public class DefaultRssFetcher implements RssFetcher {
             feed = input.build(new XmlReader(rssInputStream));
         } catch (FeedException | IOException e) {
             log.warn("There is a problem to read the feed from the input stream");
-            throw new RuntimeException("asdfa");
+            throw new RuntimeException(e);
         }
 
         return feed;

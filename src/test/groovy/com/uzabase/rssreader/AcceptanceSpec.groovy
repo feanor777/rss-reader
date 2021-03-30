@@ -4,7 +4,7 @@ import org.springframework.boot.test.context.SpringBootTest
 import spock.lang.Specification
 
 @SpringBootTest
-class ApplicationSpec extends Specification {
+class AcceptanceSpec extends Specification {
 
     def "context is started"() {
         given:

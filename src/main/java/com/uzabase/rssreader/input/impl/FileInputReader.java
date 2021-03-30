@@ -23,7 +23,7 @@ public class FileInputReader implements InputReader {
             return new FileInputStream(filePath);
         } catch (FileNotFoundException e) {
             log.warn("Not able to find the file with the provided location {}", filePath);
-            throw new RuntimeException("asdf");
+            throw new RuntimeException(e);
         }
     }
 }
