@@ -3,17 +3,20 @@ package com.uzabase.rssreader.converter.impl;
 import com.rometools.rome.feed.synd.SyndEntry;
 import com.rometools.rome.feed.synd.SyndFeed;
 import com.uzabase.rssreader.converter.Converter;
+import com.uzabase.rssreader.model.ConverterParameters;
 import org.apache.commons.collections4.ListUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 @Service
+@Qualifier("trimConverter")
 public class TrimConverter implements Converter {
 
     public static final int TRIM_LENGTH_LIMIT = 10;
 
     @Override
-    public SyndFeed convert(SyndFeed feed, String parameters) {
+    public SyndFeed convert(SyndFeed feed, ConverterParameters parameters) {
         ListUtils.emptyIfNull(feed.getEntries())
                 .forEach(this::trimEntryContent);
 
