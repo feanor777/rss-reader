@@ -1,13 +1,24 @@
 
-7
-gradlew,5/b/5bbfa66edb4db3c7c33c5181f43510990d3307f9
-@
-build.gradle.kts,d/b/dbcff70658daf80b53ce624f6adcaa529df5ed8d
-C
-settings.gradle.kts,7/4/749edfcc96398253e5b3416184e95c46621da850
-9
-	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
-d
-4src/main/java/com/uzabase/rssreader/Application.java,f/4/f4a631b0e5cceebd8a4cc618559e3bb02467427b
+h
+8src/main/java/com/uzabase/rssreader/model/InputType.java,1/e/1e3f9698ddc29e724f8b9fa3c0daf1e62a6109ce
+q
+Asrc/main/java/com/uzabase/rssreader/input/InputReaderFactory.java,2/6/262be9fe9bf8df9b47613e6acec2742d90e0deac
+i
+9src/main/java/com/uzabase/rssreader/model/OutputType.java,f/f/ff18e97c8fcaac28053afe486ea0414e4c3755ff
+x
+Hsrc/main/java/com/uzabase/rssreader/output/impl/ConsoleOutputWriter.java,6/8/686b5c69cfce86d3dc99050604692ffb6340732b
+
+Osrc/main/java/com/uzabase/rssreader/exception/InputReaderNotFoundException.java,3/3/3396439041d1b41b16b16a0ad970280a62b611a5
+€
+Psrc/main/java/com/uzabase/rssreader/exception/OutputWriterNotFoundException.java,c/9/c952478229ddbd3184ed61841de3d54a8272d083
 l
-<src/test/groovy/com/uzabase/rssreader/ApplicationSpec.groovy,a/c/acd3b5c5bf6e824d4d07119ab67c7336ad4eb060
+<src/main/java/com/uzabase/rssreader/output/OutputWriter.java,9/c/9c1977b29ed57ff363ef061a3dcb07ea46f27e45
+u
+Esrc/main/java/com/uzabase/rssreader/output/impl/FileOutputWriter.java,0/e/0e39e5be28cbf374ed409e242af2664ca68f303a
+j
+:src/main/java/com/uzabase/rssreader/input/InputReader.java,3/2/322ace86f9d7effc33b5d8615bddbf32eb50b28a
+s
+Csrc/main/java/com/uzabase/rssreader/output/OutputReaderFactory.java,2/8/28cc7ff88cb6585f7a8af8f25425589eb16dcd86
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302

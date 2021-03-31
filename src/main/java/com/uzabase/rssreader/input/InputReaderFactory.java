@@ -1,6 +1,7 @@
 package com.uzabase.rssreader.input;
 
 import com.uzabase.rssreader.exception.InputReaderNotFoundException;
+import com.uzabase.rssreader.meta.InputTypeDetector;
 import com.uzabase.rssreader.model.InputType;
 import org.springframework.stereotype.Component;
 
@@ -16,7 +17,8 @@ public class InputReaderFactory {
         inputReaders.forEach(inputReader -> INPUT_TYPE_TO_INPUT_READER.put(inputReader.getType(), inputReader));
     }
 
-    public static InputReader getInputReader(InputType inputType) {
+    public static InputReader getInputReader(String textInputType) {
+        InputType inputType = InputTypeDetector.getInputType(textInputType);
         InputReader inputReader = INPUT_TYPE_TO_INPUT_READER.get(inputType);
         if(inputReader == null) {
             throw new InputReaderNotFoundException("Input reader for the input " + inputType + " does not exist!");
