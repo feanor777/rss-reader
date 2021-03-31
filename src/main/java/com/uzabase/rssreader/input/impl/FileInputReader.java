@@ -5,6 +5,7 @@ import com.uzabase.rssreader.input.InputReader;
 import com.uzabase.rssreader.model.InputType;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import org.springframework.util.ResourceUtils;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -21,7 +22,7 @@ public class FileInputReader implements InputReader {
     @Override
     public InputStream read(String filePath) {
         try {
-            return new FileInputStream(filePath);
+            return new FileInputStream(ResourceUtils.getFile(filePath));
         } catch (FileNotFoundException e) {
             log.warn("Not able to find the file with the provided location {}", filePath);
             throw new RssFetchException(e);

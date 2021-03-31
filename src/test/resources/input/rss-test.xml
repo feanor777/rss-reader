@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>uzabase tech</title>
+        <link>https://tech.uzabase.com/</link>
+        <description>uzabase tech description</description>
+        <lastBuildDate>Thu, 25 Mar 2021 12:59:42 +0900</lastBuildDate>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <generator>Hatena::Blog</generator>
+        <item>
+            <title>Item title uzabase</title>
+            <link>https://tech.uzabase.com/entry/2021</link>
+            <description>           Item description to trim            </description>
+        </item>
+    </channel>
+</rss>
