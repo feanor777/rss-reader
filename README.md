@@ -24,7 +24,13 @@ By default, if nothing specified it outputs to the console.
 ## How to run
 `./gradlew bootRun --args='--input=https://tech.uzabase.com/rss --convert=cut,replace(/tes/Uzabase/) --output=console'`  
   
-This command will read the RSS from the https://tech.uzabase.com/rss, after that will apply 2 converters in the order cut -> replace. Which will trim all titles and descriptions of the feed in case if it has more than 10 characters and after that will replace all `Spring` with `Max Test`. In the end the result will be printed to the console.
+This command will read the RSS from the https://tech.uzabase.com/rss, after that will apply 
+2 converters in the order cut -> replace. Which will trim all titles and descriptions of 
+the feed in case if it has more than 10 characters and after that will replace all `tes` 
+with `Uzabase`. In the end the result will be printed to the console.
+
+To run tests, please execute:
+`./gradlew test`
 
 ## Design Schema
 ![rss-reader-design-schema](./rss-reader-design-schema.png)
