@@ -24,7 +24,6 @@ public class RssReaderApplicationRunner implements ApplicationRunner {
     private final RssFetcher rssFetcher;
     private final Pipeline pipeline;
 
-
     @Override
     public void run(ApplicationArguments args) {
         SyndFeed fetch = rssFetcher.fetch(input);

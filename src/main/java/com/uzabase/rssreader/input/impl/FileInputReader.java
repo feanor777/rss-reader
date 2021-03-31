@@ -1,5 +1,6 @@
 package com.uzabase.rssreader.input.impl;
 
+import com.uzabase.rssreader.exception.RssFetchException;
 import com.uzabase.rssreader.input.InputReader;
 import com.uzabase.rssreader.model.InputType;
 import lombok.extern.slf4j.Slf4j;
@@ -23,7 +24,7 @@ public class FileInputReader implements InputReader {
             return new FileInputStream(filePath);
         } catch (FileNotFoundException e) {
             log.warn("Not able to find the file with the provided location {}", filePath);
-            throw new RuntimeException(e);
+            throw new RssFetchException(e);
         }
     }
 }
