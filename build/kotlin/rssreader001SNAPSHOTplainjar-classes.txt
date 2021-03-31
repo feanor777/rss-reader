@@ -1,1 +1,0 @@
-/Users/ts-maksym.sharov/Projects/rss-reader/build/classes/java/main/com/uzabase/rssreader/Application.class
