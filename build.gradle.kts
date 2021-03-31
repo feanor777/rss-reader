@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "com.uzabase.rssreader"
-version = "0.0.1-SNAPSHOT"
+version = "1.0.0"
 java.sourceCompatibility = JavaVersion.VERSION_1_8
 
 configurations {
