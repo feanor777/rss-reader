@@ -24,7 +24,7 @@ repositories {
 }
 
 dependencies {
-    implementation("org.codehaus.groovy:groovy:3.0.7")
+    implementation("org.codehaus.groovy:groovy-all:3.0.7")
     implementation("org.springframework.boot:spring-boot-starter")
     implementation("com.rometools:rome:1.15.0")
     implementation("commons-validator:commons-validator:1.7")
@@ -34,8 +34,11 @@ dependencies {
     compileOnly("org.projectlombok:lombok")
     annotationProcessor("org.projectlombok:lombok")
 
-    testImplementation(platform("org.spockframework:spock-bom:2.0-M4-groovy-3.0"))
-    testImplementation("org.spockframework:spock-core")
-    testImplementation("org.spockframework:spock-spring")
+    testImplementation("org.spockframework:spock-core:2.0-M5-groovy-3.0")
+    testImplementation("org.spockframework:spock-spring:2.0-M5-groovy-3.0")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+}
+
+tasks.withType(Test::class) {
+    useJUnitPlatform()
 }
