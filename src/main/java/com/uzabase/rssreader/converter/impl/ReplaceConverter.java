@@ -27,7 +27,10 @@ public class ReplaceConverter implements Converter {
     }
 
     private String replaceIfMatchConditions(String description, Pair<String, String> replaceFromTo) {
-        return StringUtils.replace(description, replaceFromTo.getLeft(), replaceFromTo.getRight());
+        if(StringUtils.isEmpty(description)) {
+            return description;
+        }
+        return description.replaceAll(replaceFromTo.getLeft(), replaceFromTo.getRight());
     }
 
     private SyndEntry replaceEntryContent(SyndEntry syndEntry, Pair<String, String> replaceFromTo) {

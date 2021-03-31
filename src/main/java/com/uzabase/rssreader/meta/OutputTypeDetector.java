@@ -6,9 +6,10 @@ import org.apache.commons.lang3.StringUtils;
 
 @UtilityClass
 public class OutputTypeDetector {
+    private static final String CONSOLE_ARGUMENT = "console";
 
     public static OutputType getOutputType(String outputType) {
-        if(StringUtils.isEmpty(outputType)) {
+        if(StringUtils.isEmpty(outputType) || StringUtils.equalsIgnoreCase(CONSOLE_ARGUMENT, outputType)) {
             return OutputType.CONSOLE;
         }
 
